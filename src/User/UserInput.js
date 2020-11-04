@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 
-const userInput = () => {
+
+const UserInput = (props) => {
     return (
         <div>
             <form>
                 <div>
                     <label>
-                        User Name:  <input type="text" name="username" />
+                        User Name:  <input type="text" name="username"  onChange={props.change}/>
                     </label>
                 </div>
                </form>
@@ -14,4 +15,4 @@ const userInput = () => {
     );
 };
 
-export default userInput;
+export default UserInput;

@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
+import './UserOutput.css'
 
-const userOutput = (props) => {
+const UserOutput = (props) => {
     return (
-        <div>        
+        <div className="UserOutput">        
             <label>
-                username:  {props.name}
+                username:  <b>{props.username} </b>
             </label>              
         </div>
     );
 };
 
-export default userOutput;
+export default UserOutput;
